@@ -1,0 +1,383 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Bodoni Moda', serif;
+	font-family: 'Source Code Pro', monospace;
+
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(gambar.jpg);	
+    background-position: center;
+	background-color: burlywood;
+
+}
+.nav-menu ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #ffffff;
+	display: block;
+	margin: auto;
+	transition: 0.6s;
+	
+}
+.nav-menu ul li:hover::after{
+	width: 100%;
+}
+
+nav{
+	display:flex;
+	padding: 2% 1%;
+	justify-content:space-between;
+	align-items: right ;
+	color: rgb(255, 250, 250);
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 2px 10px;
+	position: relative;
+
+}
+.nav-links ul li a{
+	color: rgb(241, 241, 241);
+	text-decoration:wheat;
+	font-size: 19px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #e6e6e6;
+	display: block;
+	margin: auto;
+	transition: 0.6s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+.nav-menu{
+	width: 150%;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	text-decoration:wheat;
+	list-style-type: style none;
+
+}
+.nav-menu h1 {
+	font-size: 70px;
+	top: 30%;
+	color: rgb(248, 248, 248);
+	font-family:inherit
+}
+.nav-menu h2 u{
+	font-size:20px;
+	font-family:inherit;
+}
+.nav-menu ul {
+	margin: 5px 0 50px;
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	font-style: italic;
+	font-family: serif;
+	top: 70%;
+}
+
+
+
+/*----- menu ------*/
+
+.menu{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: top 100px; ;
+}
+
+.food-col h3 a {
+	text-decoration-color: #ffffff;
+	color: #ffffff;
+}
+.h3{
+    font: size 36px;
+    font-weight: 600;
+	text-align: center;
+	color: white;
+	
+}
+.p{
+    color:#000000 ;
+    font-size: 14px;
+    font-weight:300;
+    line-height: 22px;
+    padding: 10px;
+	font-style: italic;
+	text-align: center;
+ }
+ .row{
+	 margin-top: 2%;
+	 display:grid;
+	 justify-content: space-between;
+ }
+ .course-col{
+	 flex-basis:  31%;
+	 background : #ffffff;
+	 border-radius: 10px;
+	 margin-bottom: 5%;
+	 padding: 5px 5px;
+	 box-sizing: border-box;
+	 font-style: italic;
+	 width: 100%; 
+ }
+.food-col{
+	 flex-basis: 32%;
+	 border-radius: 10px;
+	 margin-bottom: 40px;
+	 position:relative; 
+	 overflow: hidden;
+	 
+ }
+ .food-col img{
+	 width: 100%;
+ }
+ .layer{
+	 background:transparent;
+	 height: 100%;
+	 width: 100%;
+	 position:absolute;
+	 top: 0;
+	 left: 0;
+	 transition: 0.5s;
+	text-align: center;
+	color: white;
+ }
+ .layer:hover{
+	background: rgba(4,9,30,0.7);
+ }
+ .layer h3 {
+	 width: 100%;
+	 font-weight: 500;
+	 color: #fff;
+	 font-size: 26px;
+	 bottom: 0;
+	 left: 50%;
+	 transform: translateX(-50%);
+	 position: absolute;
+	 opacity: 0;
+	 transition: 0.5s;
+	 font-style: italic;
+ 
+ }
+ .layer:hover h3{
+	 bottom: 49%;
+	 opacity: 1;
+	 
+ }
+.course-col p{
+	text-indent: 50px;
+	text-align: center;
+	letter-spacing: 3px;
+	background-color: rgb(255, 255, 255);
+}
+ /*----all recipe-----*/
+
+ .appetizers {
+
+	padding: 8px;
+  }
+  
+.h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: rgb(252, 244, 236);
+	font-size: 70px;
+	top: 30%;
+	text-indent: 50px;
+	letter-spacing: 3px;
+	
+  }
+  
+  p {
+	text-indent: 50px;
+	text-align: center;
+	letter-spacing: 3px;
+	background-color: rgb(252, 244, 236);
+
+
+  }
+  h3{
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	  
+  }
+  .appetiz{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position:relative; 
+	overflow: hidden;
+}
+.appetiz img{
+	margin-top: 2%;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+
+}
+.recipe h3{
+	background : #f7dfdf;
+	 border-radius: 10px;
+	 margin-bottom: 3%;
+	 width: 100%;
+	margin-right: 0%;
+}
+h4{
+	background : #f7dfdf;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	width:max-content;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.table, td, th{
+	border: 1px solid black;
+	box-align: center;
+	margin-right: 20%;
+	padding: 8px;
+	margin-top: 2%;
+	margin-right: 20%;
+
+}
+.table{
+	width: 100%;
+	border-collapse: collapse;
+	box-align: center;
+	margin-right: 20%;
+	padding: 8px;
+	margin-top: 2%;
+
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.appetiz li{
+	background : #f8f3f3;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	width:max-content;
+	margin-top: 2%;
+}
+.intro{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	position:relative; 
+	overflow: hidden;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.intro img{
+	width:24%;
+	align-items: center;
+	flex-basis: 32%;
+
+}
+.aboutUs p{
+	background : #f3e6e6;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	text-align: center;
+}
+.home li a{
+	text-indent: 50px;
+	text-align: center;
+	background-color: rgb(252, 244, 236);
+	list-style: none;
+	text-decoration: black;
+	color: rgb(5, 5, 5);
+	display: list-item;
+	position: relative;
+	letter-spacing: 3px;
+	margin-left: 40%;
+	margin-right: 40%;
+	width: 20%;
+	margin-top: 2%;
+	
+}
+.mea{
+	display:revert;
+	background-color: rgb(248, 242, 247);
+	text-align: center;
+	padding: 2% 1%;
+	justify-content:space-between;
+	align-items: right ;
+	text-align: center;  
+}
+  input[type=text], select {
+	width: 72%;
+	padding: 12px;
+	margin: 8px ;
+	display:inline-block;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 4px;
+	box-sizing: border-box;
+	column-span: 100;
+	resize : vertical;
+	row-gap: 10;
+  }
+  input[type=submit] {
+	width: 40%;
+	background-color: #f8e5f1;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display:inline-flexbox
+  }
+  input[type=submit]:hover {
+	background-color: #eecee4;
+	text-align: center;
+  }  
+  input[type=reset] {
+	width: 40%;
+	background-color: #f8e5f1;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display:inline-flexbox
+
+  }
+  input[type=reset]:hover {
+	background-color: #eecee4;
+	text-align: center;
+  }
+.form{
+	margin-top: 2%;
+	margin-bottom: 2%;
+  }
