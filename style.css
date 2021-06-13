@@ -74,7 +74,7 @@ nav{
 	transform: translate(-50%,-50%);
 	text-align: center;
 	text-decoration:wheat;
-	list-style-type: style none;
+	list-style-type:  none;
 
 }
 .nav-menu h1 {
@@ -94,6 +94,8 @@ nav{
 	font-style: italic;
 	font-family: serif;
 	top: 70%;
+	list-style: none;
+
 }
 
 
@@ -286,6 +288,8 @@ h4{
 	margin-bottom: 2%;
 	width:max-content;
 	margin-top: 2%;
+	list-style: none;
+
 }
 .intro{
 	flex-basis: 32%;
